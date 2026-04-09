@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('hotels', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('city');
+            $table->text('address');
+            $table->text('description')->nullable();
+            $table->integer('rating')->default(0);
+            $table->string('img_url')->nullable();
             $table->timestamps();
         });
     }
@@ -22,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('hotels');
+        Schema::dropIfExists('hotels_tabel');
     }
 };
