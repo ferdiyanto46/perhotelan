@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Rooms;
+use App\Models\Payment;
 use Illuminate\Http\Request;
 
-class RoomsController extends Controller
+class PaymentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class RoomsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Rooms $room)
+    public function show(Payment $payment)
     {
         //
     }
@@ -42,7 +42,7 @@ class RoomsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Rooms $room)
+    public function edit(Payment $payment)
     {
         //
     }
@@ -50,7 +50,7 @@ class RoomsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Rooms $room)
+    public function update(Request $request, Payment $payment)
     {
         //
     }
@@ -58,7 +58,7 @@ class RoomsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Rooms $room)
+    public function destroy(Payment $payment)
     {
         //
     }
